@@ -25,12 +25,8 @@ public class Main {
         System.out.println("-Средняя заработная плата сотрудника: " + calculateAverageSalary(employees) + "\n");
         System.out.println("ФИО сотрудников: ");
         for (Employee employee : employees) {
-            printEmployeesNames(employee);
+            System.out.println(employee.getName());
         }
-    }
-
-    public static void printEmployeesNames(Employee employee) {
-        System.out.println(employee.getName());
     }
 
     public static double calculateTotalSalary(Employee[] employees) {
